@@ -4,18 +4,29 @@ body {
     flex-direction: column;
     height: 100vh; /* Ensures the body takes the full height of the viewport */
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Change the background color as desired */
 }
 
 header, footer {
     background-color: #f0f0f0; /* Example background color */
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 2em;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    padding: 10px;
+    background-color: #fafafa; /* Example background color for main area */
 }
 
 article {
@@ -23,6 +34,8 @@ article {
     overflow-y: auto; /* Allows scrolling within the article */
     padding: 10px; /* Adds some padding for content */
     box-sizing: border-box; /* Ensures padding does not affect width calculations */
+    background-color: #ffffff; /* Example background color for article */
+    border-right: 1px solid #ccc;
 }
 
 aside {
@@ -30,4 +43,21 @@ aside {
     overflow-y: auto; /* Allows scrolling within the aside */
     padding: 10px; /* Adds some padding for content */
     box-sizing: border-box; /* Ensures padding does not affect width calculations */
+    background-color: #ffffff; /* Example background color for aside */
+}
+
+footer {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+/* Additional styles for content within <article> */
+article h1, article p {
+    margin: 0 0 10px;
+}
+
+article p {
+    color: #666;
 }
